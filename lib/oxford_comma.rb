@@ -2,10 +2,10 @@ def oxford_comma(array)
   case array.length
   when 1  
     array.join
-  when 2 
+  when 1..2 
     array.join(" and ")
-  when 3
-    array[-1] << " and "
-    array.join(", ")
+  when 3..7
+    array[-1] << " and #{last}"
+   
   end
 end
