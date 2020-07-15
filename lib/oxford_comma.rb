@@ -6,6 +6,6 @@ def oxford_comma(array)
     array.join(" and ")
   when 3..7
     array[-1] << " and #{last}"
-   
+    array.join(", ") 
   end
 end
